@@ -4,7 +4,7 @@ compute <- function(input_string) {
   values   <- unlist(strsplit(input_string, ' '))
   num_0    <- as.numeric(values[1])
   operator <- values[2]
-  num_1    <- as.integer(values[3])
+  num_1    <- as.numeric(values[3])
   result   <- switch(operator,
                   '+' = num_0 + num_1,
                   '-' = num_0 - num_1,
